@@ -2,8 +2,8 @@ import express from "express"
 
 const server = express()
 
-server.get('/test', (req, res) => {
-    res.send("Hello world!")
+server.post('/users', (req, res) => {
+    
 })
 
 export default server
