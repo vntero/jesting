@@ -1,4 +1,4 @@
-export function abbrevName(name: string): string {
+function abbrevName(name) {
     let answer = [name[0]]
     for(let i = 0; i < name.length; i++) {
         if(name[i] === " ") {
@@ -7,3 +7,5 @@ export function abbrevName(name: string): string {
     }
     return answer.map(el => el.toUpperCase()).join(".")
 }
+
+module.exports = abbrevName;
