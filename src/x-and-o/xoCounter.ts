@@ -1,4 +1,4 @@
-export function xo(str: string) {
+function xo(str) {
     let x = 0,
         o = 0;
 

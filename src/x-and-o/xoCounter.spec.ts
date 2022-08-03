@@ -1,4 +1,4 @@
-import { xo } from './xoCounter'
+const xo = require('./xoCounter')
 
 let str = 'XxXOoO'
 
