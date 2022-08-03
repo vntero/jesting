@@ -11,3 +11,5 @@ export function xo(str: string) {
     }
     return x === o;
 }
+
+module.exports = xo

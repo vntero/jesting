@@ -1,5 +1,7 @@
 import { xo } from './xoCounter'
 
+let str = 'XxXOoO'
+
 test('How many Xs and Os are there?', () => {
-    expect(str).toBe(true)
+    expect(xo(str)).toBe(true)
 })
