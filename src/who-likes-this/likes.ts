@@ -1,4 +1,4 @@
-export const likes = (a : string[]) : string => {
+function likes(a) {
     let count = a.length - 2
     if (a.length == 0) {
       return "no one likes this"
