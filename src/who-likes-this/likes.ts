@@ -12,3 +12,5 @@ function likes(a) {
       return `${a[0]}, ${a[1]} and ${count} others like this`
     }
   }
+
+  module.exports = likes
