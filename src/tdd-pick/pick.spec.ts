@@ -14,6 +14,8 @@
  * }                             |                              |
  */
 
+import pick from './pick'
+
 let user = {
     email: 'hermann@hesse.com',
     password: 'i-am-in-ticino',
