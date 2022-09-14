@@ -27,10 +27,9 @@ let pickedUser = {
 
 let properties = ['username', 'email']
 
-describe('pick', () => {
-    it('only returns the requested properties', () => {
-        const result = pick(user, properties)
+const result = pick(user, properties)
 
+
+it('only returns the requested properties', () => {
         expect(result).toBe(pickedUser)
     })
-})
