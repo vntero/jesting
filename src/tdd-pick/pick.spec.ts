@@ -16,8 +16,8 @@
 
 function pick(obj, props) {
     return {
-        username: obj.props[0],
-        email: obj.props[1],
+        username: obj.username,
+        email: obj.email
     }
 }
 
@@ -29,13 +29,11 @@ let user = {
 
 let props = ['username', 'email']
 
-const result = pick(user, props)
-
 let pickedUser = {
     email: 'hermann@hesse.com',
     username: 'steppenwolf',
 }
 
 it('only returns the requested properties', () => {
-        expect(result).toBe(pickedUser)
+        expect(pick(user, props)).toEqual(pickedUser)
     })
