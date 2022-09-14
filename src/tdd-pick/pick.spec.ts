@@ -14,7 +14,9 @@
  * }                             |                              |
  */
 
-import pick from './pick'
+function pick(obj, properties) {
+    return 'Hello'
+}
 
 let user = {
     email: 'hermann@hesse.com',
