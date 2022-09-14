@@ -15,7 +15,16 @@
  */
 
 describe('pick', () => {
-    it('tests', () => {
-        expect(1 + 1).toBe(2)
+    it('only returns the requested properties', () => {
+        const result = pick({
+            email: 'hermann@hesse.com',
+            password: 'i-am-in-ticino',
+            username: 'steppenwolf',
+        }, ['username', 'email'])
+
+        expect(result).toBe({
+            email: 'hermann@hesse.com',
+            username: 'steppenwolf',
+        })
     })
 })
