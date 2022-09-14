@@ -14,17 +14,23 @@
  * }                             |                              |
  */
 
+let user = {
+    email: 'hermann@hesse.com',
+    password: 'i-am-in-ticino',
+    username: 'steppenwolf',
+}
+
+let pickedUser = {
+    email: 'hermann@hesse.com',
+    username: 'steppenwolf',
+}
+
+let properties = ['username', 'email']
+
 describe('pick', () => {
     it('only returns the requested properties', () => {
-        const result = pick({
-            email: 'hermann@hesse.com',
-            password: 'i-am-in-ticino',
-            username: 'steppenwolf',
-        }, ['username', 'email'])
+        const result = pick(user, properties)
 
-        expect(result).toBe({
-            email: 'hermann@hesse.com',
-            username: 'steppenwolf',
-        })
+        expect(result).toBe(pickedUser)
     })
 })
